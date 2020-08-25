@@ -3,7 +3,6 @@
     <div class="container">
       <div class="absolute__img"><img alt="" src="../../public/phone.png"></div>
       <div class="main__container">
-        <!--        <v-flex>-->
         <div class="d-flex justify-center flex-column align-center">
           <h2 class="footer__header mt-7">SUPPORT:(844) 295-0900</h2>
           <h2 class="footer__subheader mb-9">support@frontdeskhelpers.com</h2>
@@ -13,8 +12,6 @@
             <v-icon class="ml-15 icon__item" color="white" size="57">mdi-google-plus</v-icon>
             <v-icon class="ml-15 icon__item" color="white" size="57">mdi-youtube</v-icon>
             <v-icon class="ml-15 icon__item" color="white" size="57">mdi-linkedin</v-icon>
-
-
           </v-row>
           <div class="footer__contact d-flex mt-7">
             <a class="ml-md-10">Privacy Policy</a>
@@ -23,7 +20,6 @@
           </div>
           <div class="footer__copyrights mt-3">© 2017 FDH CLOUD</div>
         </div>
-        <!--        </v-flex>-->
       </div>
     </div>
   </footer>
@@ -62,9 +58,6 @@ export default {
     @media (max-width: 1544px) {
       width: 80%;
     }
-    /*@media (max-width: 1263px) {*/
-    /*  width: 70%;*/
-    /*}*/
   }
   @media (max-width: 768px) {
     display: none;
@@ -93,7 +86,6 @@ export default {
       text-decoration: none;
     }
     @media (max-width: 768px){
-      /*flex-direction: column;*/
       width: 100%;
       flex-wrap: wrap;
       justify-content: center;

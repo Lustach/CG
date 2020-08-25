@@ -4,25 +4,20 @@
       <v-btn class="mx-2" color="indigo burger" dark fab>
         <v-icon @click="showMenu" dark>mdi-menu</v-icon>
       </v-btn>
-<!--      {{display}}-->
       <header class="header__inner" :style="{'display': display}">
         <nav class="nav">
           <div class="nav__link--block">
-            <a class="nav__link test nav__link--btn" href="#home">Home</a>
-            <a class="nav__link nav__link--btn" href="#order_services">order_services</a>
-            <a class="nav__link nav__link--btn" href="#beacon_marketing">beacon_marketing</a>
+            <router-link class="nav__link nav__link--btn" :class="nav('/home')" to="/home">Home</router-link>
+            <router-link class="nav__link nav__link--btn" :class="nav('/order_services')" to="/order_services">order_services</router-link>
+            <router-link class="nav__link nav__link--btn" :class="nav('/beacon_marketing')" to="/beacon_marketing">beacon_marketing</router-link>
           </div>
         </nav>
       </header>
       <div class="d-flex main__inner">
         <div class="cloud__container">
-          <!--        <span>100 Beacons - 50% off</span>-->
-          <!--        <span>1 Beacon   10 $</span>-->
-          <!--        <span>50 Beacons - 25% off</span>-->
           <img alt="" class="cloud__action" src="../../public/header-cloud.png">
-          <!--        <img src="../../public/Beakon-blue.png" alt="" style="    top: 205px;position: absolute;width: 100%; max-width: 849px;">-->
         </div>
-        <div class="content__text mb-4 " style="">
+        <div class="content__text mb-4">
           <h1 class="mb-lg-4 mb-md-2 content__header ">DISCOUNT FOR SERVICES</h1>
           <h2 class="mb-lg-4 mb-md-0 content__subheader ">Our advertisement services cost $10 per beacon per month, and we offer wholesale discounts:</h2>
           <h3 class="mb-lg-4 mb-md-2 content__about ">Free installation of the beacons is also an option, but then their marketing capabilities will be used by third parties also.
@@ -41,7 +36,8 @@ export default {
 
 	data: () => ({
     display: 'flex',
-    height: '580px'
+    height: '580px',
+    navClass:'',
   }),
 	methods: {
 		showMenu() {
@@ -53,9 +49,14 @@ export default {
 				this.display='flex'
         this.height='580px'
       }
-      // this.display==='inherit' ? this.display = 'none' : this.display = 'inherit'
+		},
+		nav(route){
+			return this.$route.path === route ? 'nav__link--btn-active' : ''
 		}
-	}
+	},
+  computed:{
+
+  }
 }
 </script>
 <style lang="scss">
@@ -77,7 +78,6 @@ export default {
   background-size: 100% 785px;
   @media (max-width: 768px) {
     background-size: cover;
-    /*height: 100vh;*/
   }
 
   &__inner {
@@ -88,10 +88,6 @@ export default {
       padding-top: 0;
     }
   }
-
-  /*@media (max-width:1410px){*/
-  /*  background-size: 100% 1850px;*/
-  /*}*/
 }
 
 header {
@@ -100,9 +96,6 @@ header {
 
 .cloud {
   &__action {
-    /*position: absolute;*/
-    /*width: 100%;*/
-    /*display: block;*/
     width: 100%;
     max-width: 570px;
     height: auto;
@@ -118,12 +111,9 @@ header {
     @media (max-width: 768px) {
       display: none;
     }
-    /*max-width:60%; max-height: 446px;*/
   }
 
   &__container {
-    /*width: 580px;*/
-    /*display: flex;*/
   }
 }
 
@@ -140,9 +130,6 @@ header {
       padding-top: 0;
       margin: 0;
     }
-    /*@media (max-width:1410px){*/
-    /*  padding-top: 30px;*/
-    /*}*/
   }
 
   &__header {
@@ -170,12 +157,10 @@ header {
     }
     @media (max-width: 768px) {
       font-size: 24px;
-      /*text-align: center;*/
       margin-bottom: 30px;
     }
     @media (max-width: 425px) {
       font-size: 20px;
-      /*text-align: center;*/
       margin-bottom: 5px;
     }
   }

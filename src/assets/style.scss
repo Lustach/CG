@@ -42,6 +42,12 @@ $green: #33cc99;
       background-color: white;
       color:$green !important;
     }
+    &-active{
+      box-sizing: border-box !important;
+      background-color: white;
+      color:$green !important;
+      border-radius: 60px;
+    }
   }
   &--active{
     border-radius: 60px;

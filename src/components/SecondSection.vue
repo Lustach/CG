@@ -12,7 +12,6 @@
             width="253"
           >
             <h3 class="card__title mt-4 mb-4"> {{e.title}}</h3>
-            <!--            {{e.img}}-->
             <div style="height: 140px;">
               <img :src="getImgUrl(e.img)" width="152"/>
             </div>
@@ -31,14 +30,11 @@
               <span class="ml-2">шт</span>
             </div>
             <div>
-<!--              <a class="nav__link test nav__link&#45;&#45;btn" href="#home">Home</a>-->
               <v-btn rounded class=" btn__success px-15" color="white">Buy now</v-btn>
             </div>
           </v-card>
         </div>
       </v-row>
-      <!--      <div class="card">ASENSOR</div>-->
-      <!--      <h1 class="section__header mt-7 mb-7">Choose beacons and fill in the order form?</h1>-->
     </div>
   </section>
 </template>
@@ -80,7 +76,7 @@ export default {
 	}),
 	methods: {
 		getImgUrl(pet) {
-			var images = require.context('../assets/', false, /\.png$/)
+			let images = require.context('../assets/', false, /\.png$/)
 			return images('./' + pet + ".png")
 		},
 		changeSize(symbol, e) {
@@ -97,7 +93,6 @@ export default {
     width: 100% !important;
   }
   &:hover{
-    /*background-color: #43cb83 !important;*/
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
     transition: all 0.6s ease;
@@ -141,9 +136,6 @@ export default {
   }
   .container__inner{
     justify-content: center;
-    /*@media (min-width: 930px){*/
-    /*  justify-content: center;*/
-    /*}*/
   }
 }
 </style>

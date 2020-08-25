@@ -23,12 +23,8 @@ export default {
   },
 
   data: () => ({
-    //
   }),
 };
 </script>
 <style lang="scss" scoped>
-/*.main-container{*/
-/*  max-width: 1600px !important;*/
-/*}*/
 </style>

@@ -23,15 +23,13 @@
         <a @click="next" class="next__btn nav__link nav__link--active px-15">Next</a>
       </div>
     </div>
-    <!--    <div>-->
-    <!--      <img src="../../public/wall-beacon.png" alt="" class="img__absolute">-->
-    <!--    </div>-->
   </section>
 </template>
 
 <script>
 export default {
 	mounted() {
+		// console.log(this.$route)
   },
 	name: "ThirdSection",
 	data: () => ({
@@ -57,8 +55,6 @@ export default {
 				alert('Заявка оформлена!')
 				this.$refs.form.reset()
       }
-
-			// console.log('lol')
 		},
 		test(e) {
 			e.preventDefault()
@@ -70,18 +66,13 @@ export default {
 <style lang="scss" scoped>
 .main-background {
   background-image: url("../../public/test.png");
-  /*width: 100%;*/
   background-size: 100% 100%;
-  /*height: 700px;*/
   position: relative;
 }
 
 .img__absolute {
   position: absolute;
   right: 0;
-  /*top: -28px;*/
-  /*width: 490px;*/
-  /*object-fit: cover;*/
 }
 
 .step__container {
@@ -105,8 +96,6 @@ export default {
   @media (max-width: 768px) {
     font-size: 16px;
   }
-  /*max-width: 950px;*/
-  /*display: flex;*/
 }
 
 .form {
@@ -125,10 +114,4 @@ export default {
 .next__btn {
   z-index: 2;
 }
-
-/*.theme--light.v-text-field--outline:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot:hover {*/
-/*  border-width: 1px !important;*/
-/*  border-style: solid !important;*/
-/*  border-color: red !important;*/
-/*}*/
 </style>
