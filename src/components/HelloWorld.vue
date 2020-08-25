@@ -1,59 +1,95 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div class="pa-0 main header">
+    <div class="container container__header">
+      <header class="d-flex justify-end">
+        <nav class="nav">
+          <div class="nav__link--block">
+            <a class="nav__link test nav__link--btn" href="#home">Home</a>
+            <a class="nav__link nav__link--btn" href="#order_services">order_services</a>
+            <a class="nav__link nav__link--btn" href="#beacon_marketing">beacon_marketing</a>
+          </div>
+        </nav>
+      </header>
+      <div class="d-flex main__inner">
+        <div class="cloud__container">
+          <!--        <span>100 Beacons - 50% off</span>-->
+          <!--        <span>1 Beacon   10 $</span>-->
+          <!--        <span>50 Beacons - 25% off</span>-->
+          <img alt="" class="cloud__action" src="../../public/header-cloud.png">
+          <!--        <img src="../../public/Beakon-blue.png" alt="" style="    top: 205px;position: absolute;width: 100%; max-width: 849px;">-->
+        </div>
+        <div class="content__text mb-4 " style="">
+          <h1 class="content__header mb-4">DISCOUNT FOR SERVICES</h1>
+          <h2 class="content__subheader mb-4">Our advertisement services cost $10 per beacon per month, and we offer wholesale discounts:</h2>
+          <h3 class="content__about mb-4">Free installation of the beacons is also an option, but then their marketing capabilities will be used by third parties also. How to Get Connected To get connected to
+            our service or find out more information, please call us at (844)-295-0900 or purchase our service through our site at https://fdh.cloud/order/services</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+	name: 'HelloWorld',
+
+	data: () => ({}),
 }
 </script>
+<style lang="scss">
+.main {
+  /*&__inner{*/
+  /*  position:relative;*/
+  /*}*/
+}
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+.header {
+  background-image: url("../../public/geometry-bg.png");
+  background-size: 100% 785px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+header {
+  padding-top: 56px;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+.cloud {
+  &__action {
+    /*position: absolute;*/
+    /*width: 100%;*/
+    display: block;
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+    /*max-width:60%; max-height: 446px;*/
+  }
+
+  &__container {
+    /*width: 580px;*/
+    /*display: flex;*/
+  }
 }
-a {
-  color: #42b983;
+
+.content {
+  &__text {
+    padding-top: 105px;
+    width: 570px;
+    height: 479px;
+    margin-left: 50px;
+  }
+
+  &__header {
+    font-family: Lato, b, sans-serif;
+    font-weight: 900;
+  }
+
+  &__subheader {
+    font-family: Lato, b, sans-serif;
+  }
+  &__about{
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 18px;
+  }
 }
 </style>

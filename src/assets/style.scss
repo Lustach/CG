@@ -1,0 +1,65 @@
+//@import "vars.scss";
+//.nav {
+//  display: flex;
+//  height: 100%;
+//  align-items: center;
+//}
+$green: #33cc99;
+#app{
+  color: white !important;
+
+}
+.nav__link {
+  font-size: 18px;
+  font-family:"Lato Medium", sans-serif;
+  position: relative;
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.25px;
+  line-height: 28px;
+  &--btn{
+    border-radius: 60px;
+    padding:19px 43px;
+    transition: background-color .2s linear, color .2s linear;
+    &:hover{
+      //border: 2px solid $green;
+      box-sizing: border-box !important;
+      background-color: white;
+      color:$green !important;
+    }
+  }
+  &--active{
+    border-radius: 60px;
+    padding:19px 43px;
+    transition: background-color .2s linear, color .2s linear;
+    box-sizing: border-box !important;
+    background-color: white;
+    color:$green !important;
+    &:hover{
+      transform: scale3d(1.2,1.2,1.2);
+      transition: all 0.3s ease-in;
+      box-shadow: 0 10px 30px rgba($green,0.35);
+    }
+  }
+  &{
+    margin-left: 15px;
+  }
+}
+.container{
+  padding-left: 210px;
+  padding-right: 210px;
+  max-width: 1600px !important;
+  padding-top: 0;
+  &__header{
+    height: 535px !important; //785
+  }
+}
+.section__header{
+  text-align: center;
+  color: black;
+  font-family: Lato, b, sans-serif;
+  font-size: 36px;
+}
+
