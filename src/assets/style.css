@@ -1,0 +1,120 @@
+#app {
+  color: white !important;
+}
+
+.nav__link {
+  font-size: 18px;
+  font-family: "Lato Medium", sans-serif;
+  position: relative;
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.25px;
+  line-height: 28px;
+}
+@media (max-width: 768px) {
+  .nav__link--block {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__link--block a {
+    text-align: center;
+  }
+  .nav__link--close {
+    display: none;
+  }
+}
+.nav__link--btn {
+  outline: none;
+  border-radius: 60px;
+  padding: 19px 43px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+.nav__link--btn:hover {
+  box-sizing: border-box !important;
+  background-color: white;
+  color: #33cc99 !important;
+}
+.nav__link--btn-active {
+  box-sizing: border-box !important;
+  background-color: white;
+  color: #33cc99 !important;
+  border-radius: 60px;
+}
+.nav__link--active {
+  border-radius: 60px;
+  padding: 19px 43px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+  box-sizing: border-box !important;
+  background-color: white;
+  color: #33cc99 !important;
+}
+.nav__link--active:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+  transition: all 0.3s ease-in;
+  box-shadow: 0 10px 30px rgba(51, 204, 153, 0.35);
+}
+.nav__link {
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+  .nav__link {
+    margin: 0 22px !important;
+    padding: 10px !important;
+  }
+}
+@media (max-width: 425px) {
+  .nav__link {
+    margin: 0 !important;
+    padding: 5px !important;
+  }
+}
+
+.container {
+  padding-left: 210px;
+  padding-right: 210px;
+  max-width: 1600px !important;
+  padding-top: 0;
+}
+.container__header {
+  padding-top: 20px;
+  height: 535px !important;
+}
+@media (max-width: 1600px) {
+  .container {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+@media (max-width: 1410px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.section__header {
+  text-align: center;
+  color: black;
+  font-family: Lato, b, sans-serif;
+  font-size: 36px;
+}
+@media (max-width: 1024px) {
+  .section__header {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .section__header {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

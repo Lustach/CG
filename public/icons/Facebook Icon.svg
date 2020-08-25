@@ -1,0 +1,18 @@
+<svg id="Facebook_Icon" data-name="Facebook Icon" xmlns="http://www.w3.org/2000/svg" width="57.062" height="57.53" viewBox="0 0 57.062 57.53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <ellipse id="Эллипс_2" data-name="Эллипс 2" class="cls-1" cx="28.531" cy="28.765" rx="28.031" ry="28.265"/>
+  <path id="Facebook_Icon-2" data-name="Facebook Icon" class="cls-2" d="M630.913,2334.45h-4v-8.53h-2v-3.29h2v-1.97c0-2.68,1.127-4.27,4.329-4.27h2.666v3.28h-1.666c-1.247,0-1.329.46-1.329,1.32l0,1.64h3.019l-0.353,3.29h-2.666v8.53Z" transform="translate(-600.438 -2296.5)"/>
+</svg>

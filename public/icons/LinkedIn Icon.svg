@@ -1,0 +1,18 @@
+<svg id="LinkedIn_Icon" data-name="LinkedIn Icon" xmlns="http://www.w3.org/2000/svg" width="57.032" height="57.53" viewBox="0 0 57.032 57.53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Эллипс_2_копия_3" data-name="Эллипс 2 копия 3" class="cls-1" cx="28.516" cy="28.765" r="28.016"/>
+  <path id="LinkedIn_Icon-2" data-name="LinkedIn Icon" class="cls-2" d="M918.36,2333.46V2323.3h-3.425v10.16h3.425Zm-1.713-11.54a1.91,1.91,0,1,0-.022,0h0.022Zm3.611,11.54h3.427v-5.67a2.217,2.217,0,0,1,.113-0.82,1.87,1.87,0,0,1,1.756-1.24c1.241,0,1.737.93,1.737,2.3v5.43h3.428v-5.82c0-3.12-1.692-4.57-3.947-4.57a3.407,3.407,0,0,0-3.11,1.71h0.023v-1.48h-3.427c0.045,0.96,0,10.16,0,10.16h0Z" transform="translate(-894.156 -2296.69)"/>
+</svg>
