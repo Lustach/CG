@@ -1,8 +1,8 @@
 <template>
   <section class="container d-flex justify-center" style="color: black;">
-    <div class="container__inner">
+    <div>
       <h1 class="section__header mt-7 mb-7">Choose beacons and fill in the order form?</h1>
-      <v-row>
+      <v-row  class="container__inner d-flex justify-center">
         <div :key="i" class="pa-4" cols="3" v-for="(e,i) in items">
           <v-card
             class="px-5 card d-flex align-center flex-column"
@@ -93,6 +93,9 @@ export default {
 
 <style lang="scss" scoped>
 .card {
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
   &:hover{
     /*background-color: #43cb83 !important;*/
     transform: scale(1.05);
@@ -135,6 +138,12 @@ export default {
         font-weight: 900;
       }
     }
+  }
+  .container__inner{
+    justify-content: center;
+    /*@media (min-width: 930px){*/
+    /*  justify-content: center;*/
+    /*}*/
   }
 }
 </style>
