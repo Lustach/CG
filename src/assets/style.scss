@@ -33,6 +33,7 @@ $green: #33cc99;
   letter-spacing: 0.25px;
   line-height: 28px;
   &--btn{
+    outline: none;
     border-radius: 60px;
     padding:19px 43px;
     transition: background-color .2s linear, color .2s linear;

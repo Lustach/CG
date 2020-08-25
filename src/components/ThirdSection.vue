@@ -3,7 +3,7 @@
     <div class="container">
       <h1 class="section__header mt-7 mb-5">A couple of steps to make your store popular</h1>
       <div class="step__container mb-8">
-        <button @click="test($event)" class="nav__link test nav__link--btn mr-md-11 mr-sm-4" href="#">Step 1</button>
+        <button @click="test($event)" class="nav__link test nav__link--btn nav__link--active mr-md-11 mr-sm-4" href="#">Step 1</button>
         <button class="nav__link nav__link--btn mr-md-11 mr-sm-4" href="#">Step 2</button>
         <button class="nav__link nav__link--btn mr-md-11 mr-sm-4" href="#">Step 3</button>
       </div>
